@@ -1,10 +1,11 @@
-schema = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
-version = 2
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
 console_title_template = "{{ .Folder }}"
+version = 2
 
 [[blocks]]
 alignment = "left"
 newline = true
+type = "prompt"
 
 [[blocks.segments]]
 foreground = "#ffbebc"
@@ -40,6 +41,7 @@ fetch_worktree_count = true
 
 [[blocks]]
 alignment = "right"
+type = "prompt"
 
 [[blocks.segments]]
 foreground = "#a9ffb4"
@@ -73,6 +75,7 @@ type = "sysinfo"
 [[blocks]]
 alignment = "left"
 newline = true
+type = "prompt"
 
 [[blocks.segments]]
 foreground = "#ffafd2"
@@ -85,8 +88,8 @@ type = "path"
 [blocks.segments.properties]
 folder_icon = "\uf07b"
 folder_separator_icon = " \uebcb "
-home_icon = "home"
-style = "agnoster_full"
+home_icon = ""
+style = "folder"
 
 [[blocks.segments]]
 foreground = "#A9FFB4"
